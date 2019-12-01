@@ -6,13 +6,19 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>clinic.programmming</groupId>
   <artifactId>example</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
 
   <dependencies>
-  	<dependency>
+  	<dependency> <!-- scope of compiling -->
   		<groupId>org.apache.commons</groupId>
   		<artifactId>commons-lang3</artifactId>
   		<version>3.9</version>
+	</dependency>
+	<dependency> <!-- scope of compiling as default but we need junit for testing -->
+	  	<groupId>junit</groupId>
+	  	<artifactId>junit</artifactId>
+	  	<version>4.13-rc-1</version>
+	  	<scope>test</scope> <!-- we change junit from compiling to testing scope -->
 	</dependency>
   </dependencies>
 
